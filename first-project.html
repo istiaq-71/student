@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fahima • Sadia • Hafsa | Student Identity</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #fff8fc;
+            color: #29233a;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.82);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 16px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #ff4f81, #8a5cff, #00a8ff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff4f81;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            padding: 150px 25px 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 10% 20%, #ffd5e5 0, transparent 28%),
+                radial-gradient(circle at 90% 20%, #d9d1ff 0, transparent 30%),
+                radial-gradient(circle at 50% 100%, #c9f7ff 0, transparent 35%),
+                #fff8fc;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .small-title {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            background: white;
+            color: #8a5cff;
+            font-weight: 700;
+            box-shadow: 0 8px 30px rgba(100, 60, 150, 0.12);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            line-height: 1;
+            font-weight: 900;
+            letter-spacing: -4px;
+            background: linear-gradient(
+                90deg,
+                #ff3f7f,
+                #8a4fff,
+                #009ee8,
+                #00b894
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 3vw, 32px);
+            margin-top: 20px;
+            color: #4e4761;
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: 25px auto;
+            color: #70697d;
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ff4f81, #8a5cff);
+            color: white;
+            box-shadow: 0 10px 25px rgba(138, 92, 255, 0.25);
+        }
+
+        .btn-secondary {
+            background: white;
+            border: 2px solid #eee4f5;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+        }
+
+        .floating {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .circle1 {
+            width: 80px;
+            height: 80px;
+            background: #ffcbdf;
+            left: 5%;
+            top: 25%;
+        }
+
+        .circle2 {
+            width: 55px;
+            height: 55px;
+            background: #cfc3ff;
+            right: 7%;
+            top: 45%;
+            animation-delay: 1s;
+        }
+
+        .circle3 {
+            width: 35px;
+            height: 35px;
+            background: #a9eff5;
+            left: 15%;
+            bottom: 12%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+        }
+
+        /* ================= GENERAL ================= */
+
+        section {
+            padding: 90px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-heading span {
+            color: #ff4f81;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .section-heading h2 {
+            font-size: 42px;
+            margin-top: 8px;
+        }
+
+        .section-heading p {
+            color: #777;
+            max-width: 650px;
+            margin: 10px auto;
+        }
+
+        /* ================= STUDENT CARDS ================= */
+
+        .students {
+            background: white;
+        }
+
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .student-card {
+            position: relative;
+            overflow: hidden;
+            padding: 35px 25px;
+            border-radius: 25px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #f0e7f4;
+            box-shadow: 0 15px 40px rgba(50, 20, 80, 0.08);
+            transition: 0.4s;
+        }
+
+        .student-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 55px rgba(50, 20, 80, 0.14);
+        }
+
+        .student-card:nth-child(1) {
+            background: linear-gradient(145deg, #fff0f5, #ffffff);
+        }
+
+        .student-card:nth-child(2) {
+            background: linear-gradient(145deg, #f3efff, #ffffff);
+        }
+
+        .student-card:nth-child(3) {
+            background: linear-gradient(145deg, #eafcff, #ffffff);
+        }
+
+        .avatar {
+            width: 115px;
+            height: 115px;
+            margin: auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            font-weight: 900;
+            color: white;
+            border: 7px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .avatar.fahima {
+            background: linear-gradient(135deg, #ff4f81, #ff9a9e);
+        }
+
+        .avatar.sadia {
+            background: linear-gradient(135deg, #7956ff, #b18aff);
+        }
+
+        .avatar.hafsa {
+            background: linear-gradient(135deg, #00a8e8, #00d4b5);
+        }
+
+        .student-card h3 {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        .student-card .class {
+            color: #8a5cff;
+            font-weight: 700;
+        }
+
+        .student-card p {
+            color: #70697d;
+            margin: 15px 0;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 7px;
+            margin-top: 18px;
+        }
+
+        .tag {
+            padding: 6px 12px;
+            background: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #635b70;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: #f9f5ff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #6d6575;
+            margin-bottom: 15px;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .value {
+            padding: 20px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(70, 40, 100, 0.07);
+        }
+
+        .value strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .value span {
+            font-size: 13px;
+            color: #777;
+        }
+
+        .about-art {
+            min-height: 400px;
+            border-radius: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:
+                radial-gradient(circle, rgba(255,255,255,.5) 2px, transparent 3px),
+                linear-gradient(135deg, #ffbfd5, #cbbaff, #a8ecf5);
+            background-size: 30px 30px, cover;
+            box-shadow: 0 25px 60px rgba(100, 60, 150, 0.15);
+        }
+
+        .art-card {
+            width: 75%;
+            padding: 35px;
+            border-radius: 25px;
+            background: rgba(255,255,255,.8);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .art-card .emoji {
+            font-size: 65px;
+        }
+
+        .art-card h3 {
+            font-size: 27px;
+            margin: 15px 0;
+        }
+
+        /* ================= HOBBIES ================= */
+
+        .hobbies {
+            background: white;
+        }
+
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 18px;
+        }
+
+        .hobby {
+            padding: 25px 10px;
+            text-align: center;
+            border-radius: 20px;
+            background: #fff9fc;
+            border: 1px solid #f0e8f3;
+            transition: .3s;
+        }
+
+        .hobby:hover {
+            transform: translateY(-7px) rotate(1deg);
+            background: #f8f0ff;
+        }
+
+        .hobby-icon {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .hobby h4 {
+            font-size: 15px;
+        }
+
+        .hobby small {
+            color: #888;
+        }
+
+        /* ================= DREAMS ================= */
+
+        .dreams {
+            background:
+                linear-gradient(120deg, #fff0f6, #f0edff, #e9fbff);
+        }
+
+        .dream-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .dream-card {
+            background: rgba(255,255,255,.8);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 25px;
+            border: 1px solid rgba(255,255,255,.9);
+        }
+
+        .dream-card .number {
+            font-size: 15px;
+            font-weight: 900;
+            color: #ff4f81;
+        }
+
+        .dream-card h3 {
+            font-size: 23px;
+            margin: 10px 0;
+        }
+
+        .dream-card p {
+            color: #70697d;
+        }
+
+        /* ================= QUOTE ================= */
+
+        .quote {
+            padding: 100px 25px;
+            text-align: center;
+            background: #29233a;
+            color: white;
+        }
+
+        .quote blockquote {
+            max-width: 850px;
+            margin: auto;
+            font-size: clamp(25px, 4vw, 45px);
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .quote p {
+            margin-top: 25px;
+            color: #cfc8dc;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #17131f;
+            color: white;
+            padding: 50px 25px 25px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        footer h3 {
+            font-size: 25px;
+        }
+
+        footer p {
+            color: #aaa2b5;
+            margin-top: 7px;
+        }
+
+        .footer-names {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .footer-names span {
+            padding: 8px 14px;
+            border-radius: 20px;
+            background: #282230;
+            color: #ddd;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 35px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #302a38;
+            text-align: center;
+            color: #81798b;
+            font-size: 13px;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 900px) {
+            .student-grid,
+            .dream-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hobby-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding-top: 120px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            section {
+                padding: 70px 18px;
+            }
+
+            .section-heading h2,
+            .about-text h2 {
+                font-size: 32px;
+            }
+
+            .hobby-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+
+            .about-art {
+                min-height: 300px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+        <nav>
+            <a href="#" class="logo">F • S • H</a>
+
+            <ul class="nav-links">
+                <li><a href="#students">Students</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#dreams">Dreams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="floating circle1"></div>
+        <div class="floating circle2"></div>
+        <div class="floating circle3"></div>
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                ✨ Student Identity • HSS College, Magura
+            </div>
+
+            <h1>Fahima · Sadia · Hafsa</h1>
+
+            <h2>Three Friends. Three Dreams. One Beautiful Journey.</h2>
+
+            <p>
+                Welcome to the personal space of three ambitious students
+                from HSS College, Magura. They are currently studying in
+                the 12th standard and building their dreams, memories and
+                future—one step at a time.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#students" class="btn btn-primary">
+                    Meet the Girls →
+                </a>
+
+                <a href="#dreams" class="btn btn-secondary">
+                    Explore Their Dreams
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STUDENTS ================= -->
+
+    <section class="students" id="students">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span>Meet The Students</span>
+                <h2>Three Unique Personalities</h2>
+                <p>
+                    Different interests, different personalities,
+                    but connected by friendship and ambition.
+                </p>
+            </div>
+
+
+            <div class="student-grid">
+
+                <!-- FAHIMA -->
+
+                <div class="student-card">
+
+                    <div class="avatar fahima">F</div>
+
+                    <h3>Fahima</h3>
+
+                    <div class="class">
+                        12th Standard • HSS College
+                    </div>
+
+                    <p>
+                        A cheerful and creative student who enjoys
+                        discovering new ideas and making every day memorable.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">📚 Reading</span>
+                        <span class="tag">🎨 Creativity</span>
+                        <span class="tag">🎵 Music</span>
+                        <span class="tag">🌸 Nature</span>
+                    </div>
+
+                </div>
+
+
+                <!-- SADIA -->
+
+                <div class="student-card">
+
+                    <div class="avatar sadia">S</div>
+
+                    <h3>Sadia</h3>
+
+                    <div class="class">
+                        12th Standard • HSS College
+                    </div>
+
+                    <p>
+                        An energetic and curious learner who loves
+                        exploring new experiences and expressing herself.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">✈️ Travelling</span>
+                        <span class="tag">📸 Photography</span>
+                        <span class="tag">🎬 Movies</span>
+                        <span class="tag">💡 Learning</span>
+                    </div>
+
+                </div>
+
+
+                <!-- HAFSA -->
+
+                <div class="student-card">
+
+                    <div class="avatar hafsa">H</div>
+
+                    <h3>Hafsa</h3>
+
+                    <div class="class">
+                        12th Standard • HSS College
+                    </div>
+
+                    <p>
+                        A thoughtful and ambitious student who believes
+                        that small efforts today can create a beautiful future.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">✍️ Writing</span>
+                        <span class="tag">🎧 Music</span>
+                        <span class="tag">🌱 Nature</span>
+                        <span class="tag">📖 Reading</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <span style="color:#ff4f81;font-weight:800;">
+                        THEIR STORY
+                    </span>
+
+                    <h2>
+                        Growing, Learning & Dreaming Together.
+                    </h2>
+
+                    <p>
+                        Fahima, Sadia and Hafsa are students of
+                        <strong>HSS College, Magura</strong>, currently
+                        studying in the 12th standard.
+                    </p>
+
+                    <p>
+                        Their student life is more than classrooms and
+                        textbooks. It is also about friendship, creativity,
+                        learning new things, sharing memories and preparing
+                        for the future.
+                    </p>
+
+                    <div class="values">
+
+                        <div class="value">
+                            <strong>📚 Learning</strong>
+                            <span>Always curious and ready to learn.</span>
+                        </div>
+
+                        <div class="value">
+                            <strong>🤝 Friendship</strong>
+                            <span>Supporting each other along the way.</span>
+                        </div>
+
+                        <div class="value">
+                            <strong>🌟 Ambition</strong>
+                            <span>Dreaming about a bright future.</span>
+                        </div>
+
+                        <div class="value">
+                            <strong>💫 Memories</strong>
+                            <span>Making student life unforgettable.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-art">
+
+                    <div class="art-card">
+
+                        <div class="emoji">👩🏻‍🎓👩🏻‍🎓👩🏻‍🎓</div>
+
+                        <h3>Our Student Journey</h3>
+
+                        <p>
+                            Classrooms today.
+                            Dreams tomorrow.
+                            Memories forever.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOBBIES ================= -->
+
+    <section class="hobbies" id="hobbies">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>Life Beyond Books</span>
+
+                <h2>Things They Love</h2>
+
+                <p>
+                    A colorful collection of hobbies and interests
+                    that make each personality unique.
+                </p>
+
+            </div>
+
+
+            <div class="hobby-grid">
+
+                <div class="hobby">
+                    <div class="hobby-icon">📚</div>
+                    <h4>Reading</h4>
+                    <small>Books & Stories</small>
+                </div>
+
+                <div class="hobby">
+                    <div class="hobby-icon">🎵</div>
+                    <h4>Music</h4>
+                    <small>Sounds & Songs</small>
+                </div>
+
+                <div class="hobby">
+                    <div class="hobby-icon">📸</div>
+                    <h4>Photography</h4>
+                    <small>Capturing Moments</small>
+                </div>
+
+                <div class="hobby">
+                    <div class="hobby-icon">✈️</div>
+                    <h4>Travelling</h4>
+                    <small>New Places</small>
+                </div>
+
+                <div class="hobby">
+                    <div class="hobby-icon">🎨</div>
+                    <h4>Creativity</h4>
+                    <small>Ideas & Art</small>
+                </div>
+
+                <div class="hobby">
+                    <div class="hobby-icon">🌿</div>
+                    <h4>Nature</h4>
+                    <small>Peace & Beauty</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DREAMS ================= -->
+
+    <section class="dreams" id="dreams">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>The Future</span>
+
+                <h2>Dreams Are Waiting</h2>
+
+                <p>
+                    Every student has a destination.
+                    The journey starts with a dream.
+                </p>
+
+            </div>
+
+
+            <div class="dream-grid">
+
+                <div class="dream-card">
+
+                    <div class="number">01 — DREAM</div>
+
+                    <h3>🎓 Higher Education</h3>
+
+                    <p>
+                        Continue learning, explore new subjects and
+                        prepare for the next chapter after college.
+                    </p>
+
+                </div>
+
+
+                <div class="dream-card">
+
+                    <div class="number">02 — GROW</div>
+
+                    <h3>🌟 Personal Growth</h3>
+
+                    <p>
+                        Develop confidence, skills, creativity and
+                        experiences that will shape their future.
+                    </p>
+
+                </div>
+
+
+                <div class="dream-card">
+
+                    <div class="number">03 — FUTURE</div>
+
+                    <h3>🚀 Big Dreams</h3>
+
+                    <p>
+                        Build meaningful careers, make their families
+                        proud and create a life they can be proud of.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUOTE ================= -->
+
+    <section class="quote">
+
+        <blockquote>
+            “We may have different dreams,
+            but every beautiful journey begins
+            with a single step.”
+        </blockquote>
+
+        <p>
+            — Fahima • Sadia • Hafsa
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>F • S • H</h3>
+
+                <p>
+                    HSS College, Magura • 12th Standard
+                </p>
+            </div>
+
+
+            <div class="footer-names">
+
+                <span>🌸 Fahima</span>
+                <span>💜 Sadia</span>
+                <span>💙 Hafsa</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © <span id="year"></span>
+            Fahima • Sadia • Hafsa.
+            Made with ✨ friendship & dreams.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // Automatically update copyright year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        // Smooth reveal animation
+        const cards = document.querySelectorAll(
+            ".student-card, .hobby, .dream-card, .value"
+        );
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform =
+                            "translateY(0)";
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.15
+            }
+        );
+
+
+        cards.forEach((card) => {
+
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all .7s ease";
+
+            observer.observe(card);
+
+        });
+
+    </script>
+
+</body>
+</html>
